@@ -1,0 +1,4 @@
+In this SongIterator Design Pattern example,
+we are going to iterate the list of Songs in the playlist
+by the different types of iterators.
+
