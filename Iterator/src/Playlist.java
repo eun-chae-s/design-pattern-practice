@@ -4,7 +4,7 @@ import java.util.Iterator;
 /*
     A class representing the list of Songs
  */
-public class Playlist {
+public class Playlist{
     private String playlistName;
     private ArrayList<Song> allSong;
 
@@ -21,6 +21,14 @@ public class Playlist {
         return allSong.size();
     }
 
+    public void removeSong(Song e) {
+        allSong.remove(e);
+    }
+
+    public Iterator<Song> getIterator() {
+        return new PlaylistIterator();
+    }
+
     private class PlaylistIterator implements Iterator<Song> {
         private int current = 0;
         @Override
@@ -33,7 +41,9 @@ public class Playlist {
             if (!hasNext()) {
                 return null;
             } else {
-                return allSong.get(current);
+                Song n = allSong.get(current);
+                this.current += 1;
+                return n;
             }
         }
     }
