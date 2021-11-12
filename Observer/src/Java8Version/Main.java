@@ -19,7 +19,7 @@ public class Main {
         favs.add(txt);
         Fan rach = new Fan ("rach", favs);
         bts.addObserver(rach);
-        bts.addObserver(rach);
+        txt.addObserver(rach);
 
         bts.addPost("Happy New Year!");
         txt.addPost("How are you doing?");
