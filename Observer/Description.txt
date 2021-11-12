@@ -1,0 +1,5 @@
+Application of Observer Design Pattern
+
+We're going to see how efficient the Observer Design Pattern is in the following example:
+- when a celeb publishes a new post on the Instagram, their fans and their company
+get notification regarding the update (using both Java 8 and Java 9 versions)
